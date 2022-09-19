@@ -1,10 +1,9 @@
-//take btn
-let search_btn = document.querySelector(".search-btn");
-let search_input = document.querySelector("#search-input");
-let body = document.querySelector("body");
-let selectSort = document.querySelector("#video-sorting");
+const search_btn = document.querySelector(".search-btn");
+const search_input = document.querySelector("#search-input");
+const body = document.querySelector("body");
+const selectSort = document.querySelector("#video-sorting");
 
-//event for searching events
+//event listeners
 search_btn.addEventListener("click", function (event) {
   let query = document.querySelector("#search-input").value;
   searchFunc(query);
@@ -31,11 +30,8 @@ let searchFunc = async (query) => {
   sortData = data;
 };
 
-// cURL: 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=50&regionCode=IN&key=[YOUR_API_KEY]'
-
 //api fetch
 let getData = async (query) => {
-  //  AIzaSyBtQjhGmZDsOzselALsD7tbmjj4LNgw_Bg;
   let data = await fetch(
     `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=AIzaSyDQvEF9PuhdW3JJM28VQZXQGOo84iYvd-Q`
   );
