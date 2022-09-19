@@ -45,13 +45,7 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
-#logo-text span {
-  font-size: 10px;
-  color: grey;
-  position: absolute;
-  top: 10px;
-  margin-left: 3px;
-}
+
 #microphone {
   color: white;
   font-size: 18px;
@@ -107,7 +101,6 @@ body {
 #menu:hover,
 #youtube-logo:hover,
 #account-logo:hover,
-#logo-text span:hover,
 #microphone-btn:hover,
 #search-btn:hover,
 #account-logo:hover,
