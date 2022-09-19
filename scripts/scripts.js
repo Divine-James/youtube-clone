@@ -1,18 +1,18 @@
 //take btn
 let search_btn = document.querySelector(".search-btn");
-let search_input = document.querySelector(".search-input");
+let search_input = document.querySelector("#search-input");
 let body = document.querySelector("body");
-let selectSort = document.querySelector(".video-sorting");
+let selectSort = document.querySelector("#video-sorting");
 
 //event for searching events
 search_btn.addEventListener("click", function (event) {
-  let query = document.querySelector(".search-input").value;
+  let query = document.querySelector("#search-input").value;
   searchFunc(query);
 });
 search_input.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
-    let query = document.querySelector(".search-input").value;
+    let query = document.querySelector("#search-input").value;
     searchFunc(query);
   }
 });
@@ -86,10 +86,10 @@ let displayVideos = (data) => {
   });
 };
 
-// save vide in localStorage
+// save video in localStorage
 let saveVideo = (element) => {
   localStorage.setItem("video", JSON.stringify(element));
-  window.location.href = "video.html";
+  window.location.href = "videos.html";
 };
 
 let sort = (data) => {

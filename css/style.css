@@ -69,7 +69,7 @@ body {
   color: white;
   font-size: 18px;
 }
-.search-input {
+#search-input {
   background-color: #121212;
   outline: none;
   border: 1px solid #313131;
@@ -99,7 +99,7 @@ body {
   font-size: 18px;
   padding: 5px 10px;
 }
-.video-sorting {
+#video-sorting {
   margin-right: 30px;
   background-color: #202020;
   color: white;
@@ -113,7 +113,7 @@ body {
 
 #menu:hover,
 .youtube-logo:hover,
-.video-sorting:hover,
+#video-sorting:hover,
 .microphone-btn:hover,
 .search-btn:hover,
 .account-logo:hover,
